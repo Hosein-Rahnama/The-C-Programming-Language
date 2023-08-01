@@ -1,0 +1,5 @@
+# Git ignores the following files and folders. 
+
+temp.*
+*.exe
+*.out
