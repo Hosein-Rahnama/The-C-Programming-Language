@@ -1,5 +1,6 @@
 # Git ignores the following files and folders. 
 
+.vscode
 temp.*
 *.exe
 *.out
