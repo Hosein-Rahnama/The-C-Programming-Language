@@ -1,6 +1,7 @@
 /* This program converts a number stored as a character array
    to an integer. The function name 'atoi' is an abbreviation  
-   for ASCII to integer. */
+   for ASCII to integer. A more general version of this program
+   is given in Chapter 3. */
 
 #include <stdio.h>
 

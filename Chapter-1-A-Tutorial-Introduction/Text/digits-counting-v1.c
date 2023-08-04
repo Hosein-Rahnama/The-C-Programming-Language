@@ -1,12 +1,15 @@
-/* Count the number of digits in input. */
+/* This program counts the number of digits, white spaces and 
+   other characters in the input. Second version of this program
+   is given in Chapter 3. */
 
 #include <stdio.h>
 
 int main()
 {
-    int c, i, nwhite = 0, nother = 0;
+    int c, i, nwhite, nother ;
     int ndigit[10];
 
+    nwhite = nother = 0;
     for (i = 0; i < 10; i++)
         ndigit[i] = 0;
 
