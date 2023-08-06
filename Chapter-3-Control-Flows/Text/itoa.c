@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <string.h>
+
 #define SIZE 1000
 
 void itoa(int n, char s[]);

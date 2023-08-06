@@ -1,18 +1,18 @@
 /* This program shows the longest line of an input. */
 
 #include <stdio.h>
-#define MAXLINE 1000          // Maximum input line size
+#define MAXLINE 1000            // Maximum input line size
 
-int max;                      // Maximum line length seen so far
-char line[MAXLINE];           // Current input line
-char longest[MAXLINE];        // Longest line saved so far
+int max;                        // Maximum line length seen so far
+char line[MAXLINE];             // Current input line
+char longest[MAXLINE];          // Longest line saved so far
 
 int getline(void);
 void copy(void);
 
 int main()
 {
-    int len;        // Current line length
+    int len;                    // Current line length
 
     max = 0;
     while ((len = getline()) > 0)
@@ -43,6 +43,7 @@ int getline(void)
         i++;
     }
     line[i] = '\0';
+    
     return i;
 }
 

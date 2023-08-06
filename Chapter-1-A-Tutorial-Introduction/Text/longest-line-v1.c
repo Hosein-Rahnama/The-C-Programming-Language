@@ -1,17 +1,17 @@
 /* This program shows the longest line of an input. */
 
 #include <stdio.h>
-#define MAXLINE 1000        // Maximum input line size
+#define MAXLINE 1000                // Maximum input line length
 
-int getline(char line[], int max);
+int getline(char line[], int lim);
 void copy(char to[], char from[]);
 
 int main()
 {
-    int len;                      // Current line length
-    int max;                      // Maximum line length seen so far
-    char line[MAXLINE];           // Current input line
-    char longest[MAXLINE];        // Longest line saved so far
+    int len;                        // Current line length
+    int max;                        // Maximum line length seen so far
+    char line[MAXLINE];             // Current input line
+    char longest[MAXLINE];          // Longest line saved so far
 
     max = 0;
     while ((len = getline(line, MAXLINE)) > 0)
@@ -30,10 +30,11 @@ int main()
 }
 
 // Read a line and return its length.
-int getline(char line[], int max)
+int getline(char line[], int lim)
 {
     int c, i;
-    for (i = 0; i < max -1 && (c = getchar()) != EOF && c != '\n'; i++)
+
+    for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; i++)
         line[i] = c;
     if (c == '\n')
     {
@@ -41,6 +42,7 @@ int getline(char line[], int max)
         i++;
     }
     line[i] = '\0';
+    
     return i;
 }
 

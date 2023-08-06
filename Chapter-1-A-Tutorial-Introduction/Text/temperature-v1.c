@@ -6,9 +6,9 @@ int main()
 {
     float fahr, celsius;
     int lower, upper, step;
-    lower = 0;         // Lower limit of temperature table.
-    upper =300;        // Upper limit of temperature table.
-    step = 20;         // Step size.
+    lower = 0;          // Lower limit of temperature table.
+    upper =300;         // Upper limit of temperature table.
+    step = 20;          // Step size.
     printf("Fahrenheit to Celsius Conversion Table\n");
     fahr = lower;
     while (fahr <= upper)
