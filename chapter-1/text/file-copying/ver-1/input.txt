@@ -1,0 +1,8 @@
+This is a sample text which can be used in several programs of
+this chapter. These programs are file-copying, character-counting,
+line-counting, word-counting, digits-counting, and longest-line.
+The aforementioned programms try to analyze a text input by counting its pieces.
+Here are some random numbers 12234994 00123788454 324 1440985 66543290
+1234190 3458 884 7756421. You can pass this text to such
+programms by using pipe. See the Tips section in README.md file
+of this chapter for more details. Here are some extra whitespace        !?.

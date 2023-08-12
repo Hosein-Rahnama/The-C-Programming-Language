@@ -4,10 +4,10 @@
 
 - Some programs may require an input as text. Often, you want to run that program several times, so it is wise to store that input text in a file and pass that as the input to the program. This can be done as follows.
 
-    On window's powershell, use the following command for using `sample-input.txt` as your input from the command line to a compiled program such as `main.exe`.
+    On window's powershell, use the following command for using `input.txt` as your input to a compiled program such as `main.exe`.
     
-        Get-Content sample-input.txt | .\main.exe
+        Get-Content input.txt | .\main.exe
             
     On any GNU/Linux distribution just use
 
-        sample-input.txt | ./main.exe
+        input.txt | ./main.exe
