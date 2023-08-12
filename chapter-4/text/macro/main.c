@@ -1,3 +1,5 @@
+/* This program shows some applications of macros. */
+
 #include <stdio.h>
 
 #define max(A, B) ((A) > (B) ? (A) : (B))
