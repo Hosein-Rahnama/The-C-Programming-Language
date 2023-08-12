@@ -1,9 +1,9 @@
-/* This program calculates the length of a string contant. */
+/* This program calculates the length of a string. */
 
 #include <stdio.h>
 #include <string.h>
 
-int my_strlen(char s[]);
+int my_strlen(char *s);
 
 int main()
 {
@@ -15,13 +15,12 @@ int main()
     return 0;
 }
 
-int my_strlen(char s[])
+int my_strlen(char *s)
 {
-    int i;
+    int n;
 
-    i = 0;
-    while (s[i] != '\0')
-        i++;
+    for (n = 0; *s != '\0'; s++)
+        n++;
 
-    return i;
+    return n;
 }
