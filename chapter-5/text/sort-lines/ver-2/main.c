@@ -1,4 +1,4 @@
-/* This program sort the lines of an input text numerically or lexiographically. */
+/* This program sorts the lines of an input text numerically or lexiographically. */
 
 #include <stdio.h>
 #include <string.h>

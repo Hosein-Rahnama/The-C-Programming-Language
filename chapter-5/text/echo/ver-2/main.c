@@ -1,4 +1,4 @@
-/* This program echoes its command line arguments on a single line. */
+/* This program prints its command line arguments to the terminal. */
 
 #include <stdio.h>
 
