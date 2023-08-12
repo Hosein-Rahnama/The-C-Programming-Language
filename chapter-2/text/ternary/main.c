@@ -1,4 +1,4 @@
-/* This program shows the application of the ternary operator. */
+/* This program shows some applications of the ternary operator. */
 
 #include <stdio.h>
 #define SIZE 44

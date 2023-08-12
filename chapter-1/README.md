@@ -6,8 +6,8 @@
 
     On window's powershell, use the following command for using `input.txt` as your input to a compiled program such as `main.exe`.
     
-        Get-Content input.txt | .\main.exe
+        Get-Content input.txt | main.exe
             
     On any GNU/Linux distribution just use
 
-        input.txt | ./main.exe
+        input.txt | main.exe

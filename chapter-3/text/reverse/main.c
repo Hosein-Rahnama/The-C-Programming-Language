@@ -1,4 +1,4 @@
-/* This program reverse a string in place. This shows an application
+/* This program reverses a string in place. This shows an application
    of the comma operator whitin a for loop. */
 
 #include <stdio.h>
