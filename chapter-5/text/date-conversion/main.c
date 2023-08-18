@@ -1,5 +1,6 @@
-/* This program deals with the date conversion problem. Given a day of year, it
-   returns the corresponding month and day of month and vice versa. */
+/* This program deals with a date conversion problem. Given a day of year, it
+   returns the corresponding month and day of month. Conversely, given a year,
+   month, and day of month, the program returns the associated day of year. */
 
 #include <stdio.h>
 

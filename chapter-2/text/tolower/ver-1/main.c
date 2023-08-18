@@ -9,10 +9,8 @@ int main()
 {
     char c;
 
-    printf("Enter a character: ");
-    scanf("%c", &c);
-
-    printf("Lower case of %c is %c.", c, my_tolower(c));
+    while ((c = getchar()) != EOF)
+        putchar(my_tolower(c));
 
     return 0;
 }

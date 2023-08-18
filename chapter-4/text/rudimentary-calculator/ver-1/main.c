@@ -7,7 +7,7 @@
 
 /* Change the return type to int. Do you get a mismatch error for the inconsistency
    between this declaration and the definition of atof? We will solve this issue
-   by using header files in the reverse-polish-calculator program. */
+   by using header files to check declaration against definitions. */
 double atof(char s[]);
 int atoi(char s[]);
 int getline(char line[], int lim);
