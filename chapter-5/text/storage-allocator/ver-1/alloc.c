@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "allocator.h"
+#include "alloc.h"
 
 #define ALLOCSIZE 1000                  // Size of available space
 

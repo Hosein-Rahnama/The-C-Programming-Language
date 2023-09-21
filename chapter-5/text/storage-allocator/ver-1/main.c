@@ -1,11 +1,10 @@
-/* This program manages an allocated memory. */
+/* This program manages a contiguous memory with a limited stack-oriented
+   appoarch. A more general version is given in Chapter 8. */
 
 #include <stdio.h>
 #include <string.h>
 
-#include "allocator.h"
-
-void print_string(char *s);
+#include "alloc.h"
 
 int main()
 {
@@ -22,8 +21,7 @@ int main()
         for (i = 0; i < n; i++)
             p[i] = s[i];
         p[i] = '\0';
-        print_string(p);
-        printf("\n");
+        puts(p);
     }
 
     s = "Awesome!";
@@ -36,21 +34,15 @@ int main()
         for (i = 0; i < n; i++)
             q[i] = s[i];
         q[i] = '\0';
-        print_string(q);
-        printf("\n");
+        puts(q);
     }
 
-    printf("Available space is %d Bytes.\n", free_space());
+    // The order of freeing should be opposite to that of allocating.
+    printf("Available space is %d bytes.\n", free_space());
     afree(q);
-    printf("Available space is %d Bytes.\n", free_space());
+    printf("Available space is %d bytes.\n", free_space());
     afree(p);
-    printf("Available space is %d Bytes.", free_space());
+    printf("Available space is %d bytes.\n", free_space());
 
     return 0;
-}
-
-void print_string(char *s)
-{
-    while (*s != '\0')
-        printf("%c", *(s++));
 }

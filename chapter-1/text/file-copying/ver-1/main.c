@@ -1,4 +1,4 @@
-/* Copy input to output. */
+/* This program copies standard input to standard output. */
 
 #include <stdio.h>
 

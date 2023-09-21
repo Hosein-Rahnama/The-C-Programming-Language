@@ -1,6 +1,6 @@
 /* This program counts the number of digits, white spaces and 
-   other characters in the input. First version of this program
-   was given in Chapter 1. */
+   other characters in the input. This is a second version of the 
+   program given in Chapter 1. */
 
 #include <stdio.h>
 

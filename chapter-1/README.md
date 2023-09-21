@@ -13,5 +13,5 @@ Get-Content input.txt | main.exe
 On any GNU/Linux distribution just use
 
 ```bash
-input.txt | main.exe
+cat input.txt | ./main
 ```
